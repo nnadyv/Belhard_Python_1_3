@@ -24,8 +24,11 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :return: кортеж с параметрами
     :rtype: tuple
     """
-
-    return None
+    import math
+    gipotenuza = math.sqrt(side_1**2 + side_2**2)
+    perimetr = side_1 + side_2 + gipotenuza
+    ploshad = (side_1 * side_2) / 2
+    return gipotenuza, perimetr, ploshad
 
 
 if __name__ == '__main__':
